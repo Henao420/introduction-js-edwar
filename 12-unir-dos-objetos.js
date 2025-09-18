@@ -16,21 +16,25 @@ const measurements = {
 
 // Rest operator, consta de (...)
 
-// const newProducto = {...product, ...measurements};
+const newProducto = {...product, ...measurements};
 
-// console.log(product);
-// console.log(newProducto);
+console.log(product);
+console.log(newProducto);
 
 const vehicle = {
     brand : 'Lamborghini',
-    model : 'Veneno Roadster',
-    color : 'Black',
-    maxSpeed : '355Km/H'
+    available : false
 }
 
 const motorbike = {
-    marca : 'Ducatti',
-    model : 'StreetFigther V4',
-    color : 'Red',
-    maxSpeed: '299Km/H'
+    brand : 'Ducatti',
+    available : true
+
 }
+
+const newProducto2 = {...vehicle, ...motorbike};
+
+console.log(vehicle);
+console.log(newProducto2);
+
+Object.freeze(vehicle);
