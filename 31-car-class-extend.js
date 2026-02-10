@@ -1,4 +1,4 @@
-// Ejercicio con las clase carro, vamos a heredad dos tipos de carros distintos
+// Ejercicio con las clase carro, vamos a heredar dos tipos de carros distintos
 
 class FullCar{
     constructor(brand, color, model, id, airConditioned, sunRoof){
@@ -45,5 +45,6 @@ class MiddleCar extends FullCar {
 };
 
 const car5 = new MiddleCar("Hyundai", "White", "I10", 4567, true);
+
 
 console.log(car5.runMiddleCar());
